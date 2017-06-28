@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+
+    android:paddingRight="16dp" >
+    <TextView
+        android:textSize="32sp"
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please fill in the form to the best of your knowledge" />
+    <TextView
+        android:textSize="30sp"
+        android:id="@+id/MyAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/InputAge"
+        android:hint="Age" />
+
+    <EditText
+        android:id="@id/InputAge"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/description"
+        android:inputType="number" />
+
+    <TextView
+        android:textSize="30sp"
+        android:id="@+id/MyGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MyAge"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/InputGender"
+        android:hint="Gender" />
+    <TextView
+        android:id="@id/InputGender"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/InputAge" />
+
+    <TextView
+        android:textSize="30sp"
+        android:id="@+id/MyHeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MyGender"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/InputHeight"
+        android:hint="Height" />
+
+    <EditText
+        android:id="@id/InputHeight"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/MyGender"
+        android:inputType="number" />
+
+    <TextView
+        android:textSize="30sp"
+        android:id="@+id/MyWeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MyHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/InputWeight"
+        android:hint="Weight" />
+
+    <EditText
+        android:id="@id/InputWeight"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/MyHeight"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/Form1Button"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/InputWeight"
+        android:text="done" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:layout_alignBaseline="@+id/checkBox2"
+        android:layout_alignBottom="@+id/checkBox2"
+        android:layout_toLeftOf="@+id/InputAge"
+        android:layout_toStartOf="@+id/InputAge" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputAge"
+        android:layout_toEndOf="@+id/MyGender"
+        android:layout_toRightOf="@+id/MyGender"
+        android:text="Female" />
+</RelativeLayout>
